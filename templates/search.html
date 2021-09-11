@@ -7,6 +7,9 @@
     <title>Flask Application</title>
 </head>
 <body>
+    {% for cred in result %}
+        {{ cred }} <br>
+    {% endfor %}
      {% for image in imagepaths %}
         <h1>{{ image }} </h1>
          <img src ="{{ image }}" alt="">

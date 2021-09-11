@@ -16,7 +16,7 @@ def show():
     return cur.fetchall()
 
 def createTable():
-    cur.execute("DROP TABLE posts IF EXISTS")
+    cur.execute("DROP TABLE IF EXISTS posts")
     cur.execute(""" CREATE TABLE posts (
         name TEXT
         age INTEGER

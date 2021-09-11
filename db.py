@@ -8,7 +8,7 @@ conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
 def addEntry(name, age):
-    cur.execute("INSERT INTO posts VALUES(?, ?)", (name, age))
+    cur.execute("INSERT INTO posts(name, age) VALUES(?, ?)", (name, age))
     conn.commit()
 
 def show():

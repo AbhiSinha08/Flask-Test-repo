@@ -18,7 +18,7 @@ def show():
 def createTable():
     cur.execute("DROP TABLE IF EXISTS posts")
     cur.execute(""" CREATE TABLE posts (
-        name TEXT
+        name TEXT,
         age INTEGER
     )""")
     conn.commit()

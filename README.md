@@ -1,4 +1,3 @@
 # Flask-Test-repo
-Testing deployement of Flask web app with PostgreSQL db
+Testing deployement of Flask web app
 <br>
-Hosted at https://flasktestapp123.herokuapp.com/
